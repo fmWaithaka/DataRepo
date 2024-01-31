@@ -16,8 +16,7 @@ soup = BeautifulSoup(r.text, 'html.parser')
 # Find the links to the individual staff profile pages
 link_elements = soup.select('a[href^="https://cs.dkut.ac.ke/"]')  # adjust this selector as needed
 
-# Initialize an empty string to hold the HTML from all pages
-all_html = ''
+all_html = ''   # variable to store the combined HTML
 
 # Loop over the links and scrape each page
 for link_element in link_elements:
